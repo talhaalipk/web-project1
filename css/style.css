@@ -236,6 +236,7 @@ body{
     padding-left: 3%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: -5;
 }
 
@@ -243,7 +244,6 @@ body{
     font-size: 3.6rem;
     font-weight: bold;
     line-height: 1.2;
-    margin-bottom: rem;
 }
 
 .Contact .left img{
@@ -258,6 +258,7 @@ body{
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .Contact .right .firstrow{
@@ -285,6 +286,7 @@ body{
     background: var(--button-color);
     color: var(--white);
     font-size: 0.9rem;
+    outline: none;
 }
 
 ::placeholder{
@@ -406,7 +408,81 @@ footer p{
 @media (max-width: 1000px) {
     html {
       font-size: 10px; /* Adjust the root font size for even smaller screens */
-    }
+    }   
+}
 
-    
+
+
+.recent-work{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/bgimage.png);
+    background-repeat: repeat;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;  */
+    gap: 2rem;
+    padding: 0rem 3%;
+    /* padding-left: 5%; */
+}
+
+.recent-work h3{
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.recent-work h3 span{
+    color: var(--main);
+}
+
+.recent-work .btm-gup{
+    display: flex;
+    gap: 1rem;
+}
+
+.recent-work .btm-gup button{
+    padding: 0.3rem 1.2rem;
+    background: var(--button-color);
+    border-radius: 1rem ;
+    font-size: 0.8rem;
+    border: none;
+}
+
+.recent-work .btm-gup button:hover{
+    background: var(--main);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 0.82rem;
+
+}
+
+.recent-work .btm-gup button:nth-child(1){
+    background: var(--main);
+}
+
+.pjt-container{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.pjt-container .pjt{
+    width: 22%;
+    height: 15rem;
+    background: var(--button-color);
+    opacity: 0.8;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pjt-container .pjt img{
+    width: 80%;
+    opacity: 1;
+
 }
