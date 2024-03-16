@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    /* font-family: "Poppins", sans-serif;
+    font-family: "Oswald", sans-serif; */
+:root{
+    --bg-color : #222831;
+    --button-color : #393E46;
+    --main : #00ADB5;
+    --white : #EEEEEE;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+}
+
+
+body{
+    background-color: var(--bg-color);
+    width: 100%;
+}
+
+/* Header */
+
+#header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 3%;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+#header a{
+    text-decoration: none;
+}
+
+#header span{
+    font-size: 1.55rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+
+#header nav a{
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0px;
+    padding: 0px 1.5rem;
+    text-decoration: none;
+}
+#header nav a:nth-child(3){
+    padding-right: 0px;
+}
+
+#header nav a:hover{
+    cursor: pointer;
+    font-size: 1.14rem;
+    color: var(--main);
+}
+
+
+
+/* Banner Css */
+
+.banner{
+    /* background-color: #EEEEEE; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.banner .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+    /* background-color: #EEEEEE; */
+}
+
+.banner .left h1{
+    font-size: 5.5rem;
+    font-weight: bold ;
+    line-height: 1;    
+}
+
+.banner .left .second{
+    font-size: 4.5rem;
+    color: var(--bg-color);
+    -webkit-text-stroke: 1px  var(--main);
+}
+
+.buttoms{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    width: 100;   
+}
+
+.buttom1 span{
+    background-color: var(--main);
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    /* background: var(--main); */
+}
+
+.buttom1 :hover{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.buttom2{
+    background-color: var(--button-color);
+    width: 12rem;
+    height: 2.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttom2 span{
+    margin-right: 5px;
+}
+
+.buttom2 :hover{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.banner .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-right: 3%;
+}
+
+.banner .right img{
+    width: 60%;
+
+}
+
+.AboutSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.AboutSection .left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+}
+
+.AboutSection .left h2{
+    font-size: 4rem;
+    font-weight: bold ;
+    line-height: 1; 
+    margin-bottom: 2rem;
+}
+
+.AboutSection .left h2 span{
+    color: var(--main);
+}
+
+.AboutSection .left  p{
+    font-size: 1rem;
+    font-weight: normal ;
+    line-height: 1.5;
+    letter-spacing: 2px; 
+}
+
+.AboutSection .left  p .read{
+    font-size: 1.2rem;
+    font-weight: bolder ;
+    line-height: 1.5;
+    letter-spacing: 2px; 
+}
+
+.AboutSection .left  p .read:hover{
+    color: var(--main);
+    cursor: pointer;
+}
+
+#more_paragraph {
+    display: none;
+
+}
+.AboutSection .right{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.AboutSection .right img{
+    width: 60%;
+    
+}
+
+
+/* Contact*/
+
+.Contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.Contact .left{
+    width: 50%;
+    height: 100%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: -5;
+}
+
+.Contact .left h3{
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: rem;
+}
+
+.Contact .left img{
+    width: 70%;
+    padding-left: 30%;
+}
+
+.Contact .right{
+    width: 50%;
+    height: 100%;
+    padding-right: 3%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact .right .firstrow{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.Contact .right .container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+.Contact .right .container input{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.7rem;
+    border: none;
+    background: var(--button-color);
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+::placeholder{
+    color: var(--white);
+}
+.Contact .right label{
+    font-size: 1rem;
+    font-weight:500;
+    margin-bottom: 0.7rem;
+}
+
+.Contact .right .secondrow{
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.Contact .right textarea[name="message"]{
+    width:80%;
+    height: 30%;
+    border-radius: 0.7rem;
+    background-color: var(--button-color);
+    border: none;
+    padding: 0.5rem 0.9rem;
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.Contact .right .sumbit{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 30%;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--main);
+}
+
+.Contact .right .sumbit:hover{
+    cursor: pointer;
+    width: 31%;
+    height: 2.6rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.Contact .right .sumbit img{
+    width: 1.4rem;
+}
+
+.Contact .right .sumbit span{
+    font-size: 100%;
+}
+
+/* Foooter */
+footer {
+    width: 100%;
+    height: 15rem;
+    padding: 0px 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--white);
+    
+}
+
+footer .navMenu{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+footer .item{
+    display: flex;
+    justify-content: center;
+    margin: 0px 1.7rem;
+}
+
+footer .item img{
+    margin-right: 0.3rem;
+
+}
+
+footer .item span{
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+footer .icons{
+    display: flex;
+    justify-content: center;
+}
+
+footer .icons .SingleIcon {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--button-color);
+    border-radius: 50%;
+    display : flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: 0px 1rem;
+}
+
+
+footer .icons .SingleIcon img{
+    width: 50%;
+    height: 50%;
+
+}
+
+footer p{
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+    html {
+      font-size: 10px; /* Adjust the root font size for even smaller screens */
+    }
+
+    
+}
